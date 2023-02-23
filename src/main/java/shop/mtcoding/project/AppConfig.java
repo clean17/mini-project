@@ -6,7 +6,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import shop.mtcoding.project.interceptor.CustomInterceptor;
 
-// 테스트
+// 테스트1
 
 @Configuration
 public class AppConfig implements WebMvcConfigurer {
