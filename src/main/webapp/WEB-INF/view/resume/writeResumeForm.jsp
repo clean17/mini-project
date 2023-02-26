@@ -12,29 +12,17 @@
               <div class="card border-light mb-3" style="max-width: 40rem;">
                 <div class="card-header">기본 정보</div>
                 <div class="card-body">
-                  <div class="form-group">
-                    <label for="inputPhoto" class="form-label mt-1">프로필 사진</label>
-                    <input type="image" name="photo" class="form-control" src="#" value="${user.photo}" readonly>
-                  </div>
-                  <div class="form-group">
-                    <label for="inputName" class="form-label mt-1">이름</label>
-                    <input type="text" name="name" class="form-control" value="${user.name}" readonly>
-                  </div>
-                  <div class="form-group">
-                    <label for="inputTel" class="form-label mt-1">번호</label>
-                    <input type="tel" name="tel" class="form-control" value="${user.tel}" readonly>
-                  </div>
-                  <div class="form-group">
-                    <label for="inputEmail" class="form-label mt-1">Email</label>
-                    <input type="email" name="email" class="form-control" value="${user.email}" readonly>
-                  </div>
-                  <div class="form-group">
-                    <label for="inputAddress" class="form-label mt-1">주소</label>
-                    <input type="text" name="userAddress" class="form-control" value="${user.userAddress}" readonly>
-                  </div>
-                  <div class="form-group">
-                    <label for="inputBirth" class="form-label mt-1">생년월일</label>
-                    <input type="date" name="birth" class="form-control" value="${user.birth}" readonly>
+                  <div class="row">
+                    <div class="col-3">
+                      프로필 사진
+                    </div>
+                    <div class="col-9">
+                      <p>이름</p>
+                      <p>번호</p>
+                      <p>email</p>
+                      <p>주소</p>
+                      <p>생년월일</p>
+                    </div>
                   </div>
                 </div>
               </div>
