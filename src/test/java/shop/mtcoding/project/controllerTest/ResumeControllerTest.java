@@ -4,6 +4,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import java.sql.Timestamp;
@@ -24,6 +25,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import shop.mtcoding.project.dto.resume.ResumeReq.ResumeUpdateReqDto;
 import shop.mtcoding.project.dto.resume.ResumeReq.ResumeWriteReqDto;
 import shop.mtcoding.project.dto.resume.ResumeResp;
 import shop.mtcoding.project.model.User;
@@ -39,7 +41,7 @@ public class ResumeControllerTest {
     private MockMvc mvc;
 
     private MockHttpSession mockSession;
-    
+
     @BeforeEach
     private void mockUserSession() {
         User mockUser = new User(
@@ -156,6 +158,36 @@ public class ResumeControllerTest {
 
         // then
         resultActions.andExpect(status().isOk());
+    }
+
+    @Test
+    public void updateResume_test() throws Exception {
+        // given
+        int id = 1;
+        ResumeUpdateReqDto resumeUpdateReqDto = new ResumeUpdateReqDto();
+        resumeUpdateReqDto.setTitle("제목1-수정");
+        resumeUpdateReqDto.setContent("내용1-수정");
+        resumeUpdateReqDto.setEducation("내용1-수정");
+        resumeUpdateReqDto.setCareer("내용1-수정");
+        resumeUpdateReqDto.setLink("내용1-수정");
+        resumeUpdateReqDto.setState(1);
+        resumeUpdateReqDto.setSkillName1("내용1-수정");
+        resumeUpdateReqDto.setSkillName2("내용1-수정");
+        resumeUpdateReqDto.setSkillName3("내용1-수정");
+
+        String requestBody = om.writeValueAsString(resumeUpdateReqDto);
+        System.out.println("테스트 : " + requestBody);
+
+        // when
+        ResultActions resultActions = mvc.perform(
+                put("/user/resume/" + id + "/update")
+                        .content(requestBody)
+                        .contentType(MediaType.APPLICATION_JSON_VALUE)
+                        .session(mockSession));
+
+        // then
+        resultActions.andExpect(status().isOk());
+        resultActions.andExpect(jsonPath("$.code").value(1));
     }
 
 }

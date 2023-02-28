@@ -204,6 +204,8 @@
             education: $("#education").val(),
             career: $("#career").val(),
             skillName1: $("#skillName1").val(),
+            skillName2: $("#skillName2").val(),
+            skillName3: $("#skillName3").val(),
             link: $("#link").val(),
             state: $("#state").val(),
             userId: id,
@@ -221,6 +223,15 @@
           });
         } else {
           let data = {
+            title: $("#title").val(),
+            content: $("#content").val(),
+            education: $("#education").val(),
+            career: $("#career").val(),
+            skillName1: $("#skillName1").val(),
+            skillName2: $("#skillName2").val(),
+            skillName3: $("#skillName3").val(),
+            link: $("#link").val(),
+            state: $("#state").val(),
             resumeId: resume,
             userId: id
           }
@@ -268,12 +279,14 @@
           education: $("#education").val(),
           career: $("#career").val(),
           skillName1: $("#skillName1").val(),
+          skillName2: $("#skillName2").val(),
+          skillName3: $("#skillName3").val(),
           link: $("#link").val(),
           state: $("#state").val(),
           userId: id,
           resumeId: resume
         };
-        if ( resume > 0){
+        if (resume > 0) {
           $.ajax({
             type: "put",
             url: "/user/resume/update",
@@ -284,19 +297,19 @@
           }).fail((err) => {
             alert(err.responseJSON.msg);
           });
-        }else{
-        $.ajax({
-          type: "post",
-          url: "/user/resume/write",
-          data: JSON.stringify(data),
-          contentType: "application/json; charset=utf-8", 
-          dataType: "json" 
-        }).done((res) => { 
-          alert(res.msg);
-          location.href = "/user/resume";
-        }).fail((err) => { 
-          alert(err.responseJSON.msg);
-        });
+        } else {
+          $.ajax({
+            type: "post",
+            url: "/user/resume/write",
+            data: JSON.stringify(data),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json"
+          }).done((res) => {
+            alert(res.msg);
+            location.href = "/user/resume";
+          }).fail((err) => {
+            alert(err.responseJSON.msg);
+          });
         }
 
 
