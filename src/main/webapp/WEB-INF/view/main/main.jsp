@@ -78,13 +78,13 @@
 <!-- 가운데 -->
 <div class="row px-2">
     <div class="col-4  ">
-        <button type="button" class="btn btn-success w-100">지역별</button>
+        <button class="btn btn-success w-100">지역별</button>
     </div>
     <div class="col-4 ">
-        <button type="button" class="btn btn-success w-100">기술별</button>
+        <button class="btn btn-success w-100">기술별</button>
     </div>
     <div class="col-4  ">
-        <button type="button" class="btn btn-success w-100">직무별</button>
+        <button class="btn btn-success w-100">직무별</button>
     </div>
 </div>
 
