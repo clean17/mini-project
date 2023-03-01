@@ -33,11 +33,11 @@
                                     <div class="form-group">
                                         <select class="form-select" name="education" id="education">
                                             <option selected disabled>학력 사항을 선택해주세요</option>
-                                            <option value="초졸">초졸</option>
-                                            <option value="중졸">중졸</option>
-                                            <option value="고졸">고졸</option>
-                                            <option value="대졸">대졸</option>
-                                            <option value="대학원 이상">대학원 이상</option>
+                                            <option value="초졸" ${rDto.education == '초졸' ? 'selected="selected"' : '' }>초졸</option>
+                                            <option value="중졸" ${rDto.education == '중졸' ? 'selected="selected"' : '' }>중졸</option>
+                                            <option value="고졸" ${rDto.education == '고졸' ? 'selected="selected"' : '' }>고졸</option>
+                                            <option value="대졸" ${rDto.education == '대졸' ? 'selected="selected"' : '' }>대졸</option>
+                                            <option value="대학원 이상" ${rDto.education == '대학원 이상' ? 'selected="selected"' : '' }>대학원 이상</option>
                                         </select>
                                     </div>
                                 </div>
@@ -49,16 +49,16 @@
                                     <div class="form-group">
                                         <select class="form-select" name="career" id="career">
                                             <option selected disabled>경력 사항을 선택해주세요</option>
-                                            <option value="신입">신입</option>
-                                            <option value="1년차 미만">1년차 미만</option>
-                                            <option value="1년">1년</option>
-                                            <option value="2년">2년</option>
-                                            <option value="3년">3년</option>
-                                            <option value="4년">4년</option>
-                                            <option value="5년">5년</option>
-                                            <option value="6년">6년</option>
-                                            <option value="7년">7년</option>
-                                            <option value="8년차 이상">8년차 이상</option>
+                                            <option value="신입" ${rDto.career == '신입' ? 'selected="selected"' : '' }>신입</option>
+                                            <option value="1년차 미만" ${rDto.career == '1년차 미만' ? 'selected="selected"' : '' }>1년차 미만</option>
+                                            <option value="1년" ${rDto.career == '1년' ? 'selected="selected"' : '' }>1년</option>
+                                            <option value="2년" ${rDto.career == '2년' ? 'selected="selected"' : '' }>2년</option>
+                                            <option value="3년" ${rDto.career == '3년' ? 'selected="selected"' : '' }>3년</option>
+                                            <option value="4년" ${rDto.career == '4년' ? 'selected="selected"' : '' }>4년</option>
+                                            <option value="5년" ${rDto.career == '5년' ? 'selected="selected"' : '' }>5년</option>
+                                            <option value="6년" ${rDto.career == '6년' ? 'selected="selected"' : '' }>6년</option>
+                                            <option value="7년" ${rDto.career == '7년' ? 'selected="selected"' : '' }>7년</option>
+                                            <option value="8년차 이상" ${rDto.career == '8년차 이상' ? 'selected="selected"' : '' }>8년차 이상</option>
                                         </select>
                                     </div>
                                 </div>
@@ -70,42 +70,42 @@
                                     <div class="form-group">
                                         <select class="form-select" name="skillName1" id="skillName1">
                                             <option selected disabled>보유 기술을 선택해주세요</option>
-                                            <option value="Java">Java</option>
-                                            <option value="JavaScript">JavaScript</option>
-                                            <option value="Spring">Spring</option>
-                                            <option value="HTML/CSS">HTML/CSS</option>
-                                            <option value="jQuery">jQuery</option>
-                                            <option value="JSP">JSP</option>
-                                            <option value="Vue.js">Vue.js</option>
-                                            <option value="Oracle">Oracle</option>
-                                            <option value="MySQL">MySQL</option>
-                                            <option value="React">React</option>
+                                            <option value="Java" ${usDto.skillName1 == 'Java' ? 'selected="selected"' : '' }>Java</option>
+                                            <option value="JavaScript" ${usDto.skillName1 == 'JavaScript' ? 'selected="selected"' : '' }>JavaScript</option>
+                                            <option value="Spring" ${usDto.skillName1 == 'Spring' ? 'selected="selected"' : '' }>Spring</option>
+                                            <option value="HTML/CSS" ${usDto.skillName1 == 'HTML/CSS' ? 'selected="selected"' : '' }>HTML/CSS</option>
+                                            <option value="jQuery" ${usDto.skillName1 == 'jQuery' ? 'selected="selected"' : '' }>jQuery</option>
+                                            <option value="JSP" ${usDto.skillName1 == 'JSP' ? 'selected="selected"' : '' }>JSP</option>
+                                            <option value="Vue.js" ${usDto.skillName1 == 'Vue.js' ? 'selected="selected"' : '' }>Vue.js</option>
+                                            <option value="Oracle" ${usDto.skillName1 == 'Oracle' ? 'selected="selected"' : '' }>Oracle</option>
+                                            <option value="MySQL" ${usDto.skillName1 == 'MySQL' ? 'selected="selected"' : '' }>MySQL</option>
+                                            <option value="React" ${usDto.skillName1 == 'React' ? 'selected="selected"' : '' }>React</option>
                                         </select>
                                         <select class="form-select" name="skillName2" id="skillName2">
                                             <option selected disabled>보유 기술을 선택해주세요</option>
-                                            <option value="Java">Java</option>
-                                            <option value="JavaScript">JavaScript</option>
-                                            <option value="Spring">Spring</option>
-                                            <option value="HTML/CSS">HTML/CSS</option>
-                                            <option value="jQuery">jQuery</option>
-                                            <option value="JSP">JSP</option>
-                                            <option value="Vue.js">Vue.js</option>
-                                            <option value="Oracle">Oracle</option>
-                                            <option value="MySQL">MySQL</option>
-                                            <option value="React">React</option>
+                                            <option value="Java" ${usDto.skillName2 == 'Java' ? 'selected="selected"' : '' }>Java</option>
+                                            <option value="JavaScript" ${usDto.skillName2 == 'JavaScript' ? 'selected="selected"' : '' }>JavaScript</option>
+                                            <option value="Spring" ${usDto.skillName2 == 'Spring' ? 'selected="selected"' : '' }>Spring</option>
+                                            <option value="HTML/CSS" ${usDto.skillName2 == 'HTML/CSS' ? 'selected="selected"' : '' }>HTML/CSS</option>
+                                            <option value="jQuery" ${usDto.skillName2 == 'jQuery' ? 'selected="selected"' : '' }>jQuery</option>
+                                            <option value="JSP" ${usDto.skillName2 == 'JSP' ? 'selected="selected"' : '' }>JSP</option>
+                                            <option value="Vue.js" ${usDto.skillName2 == 'Vue.js' ? 'selected="selected"' : '' }>Vue.js</option>
+                                            <option value="Oracle" ${usDto.skillName2 == 'Oracle' ? 'selected="selected"' : '' }>Oracle</option>
+                                            <option value="MySQL" ${usDto.skillName2 == 'MySQL' ? 'selected="selected"' : '' }>MySQL</option>
+                                            <option value="React" ${usDto.skillName2 == 'React' ? 'selected="selected"' : '' }>React</option>
                                         </select>
                                         <select class="form-select" name="skillName3" id="skillName3">
                                             <option selected disabled>보유 기술을 선택해주세요</option>
-                                            <option value="Java">Java</option>
-                                            <option value="JavaScript">JavaScript</option>
-                                            <option value="Spring">Spring</option>
-                                            <option value="HTML/CSS">HTML/CSS</option>
-                                            <option value="jQuery">jQuery</option>
-                                            <option value="JSP">JSP</option>
-                                            <option value="Vue.js">Vue.js</option>
-                                            <option value="Oracle">Oracle</option>
-                                            <option value="MySQL">MySQL</option>
-                                            <option value="React">React</option>
+                                            <option value="Java" ${usDto.skillName3 == 'Java' ? 'selected="selected"' : '' }>Java</option>
+                                            <option value="JavaScript" ${usDto.skillName3 == 'JavaScript' ? 'selected="selected"' : '' }>JavaScript</option>
+                                            <option value="Spring" ${usDto.skillName3 == 'Spring' ? 'selected="selected"' : '' }>Spring</option>
+                                            <option value="HTML/CSS" ${usDto.skillName3 == 'HTML/CSS' ? 'selected="selected"' : '' }>HTML/CSS</option>
+                                            <option value="jQuery" ${usDto.skillName3 == 'jQuery' ? 'selected="selected"' : '' }>jQuery</option>
+                                            <option value="JSP" ${usDto.skillName3 == 'JSP' ? 'selected="selected"' : '' }>JSP</option>
+                                            <option value="Vue.js" ${usDto.skillName3 == 'Vue.js' ? 'selected="selected"' : '' }>Vue.js</option>
+                                            <option value="Oracle" ${usDto.skillName3 == 'Oracle' ? 'selected="selected"' : '' }>Oracle</option>
+                                            <option value="MySQL" ${usDto.skillName3 == 'MySQL' ? 'selected="selected"' : '' }>MySQL</option>
+                                            <option value="React" ${usDto.skillName3 == 'React' ? 'selected="selected"' : '' }>React</option>
                                         </select>
                                     </div>
                                 </div>
@@ -148,7 +148,7 @@
                                 <div class="card-body">
                                     <fieldset class="form-group">
                                         <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="state" id="state" value=1
+                                            <input class="form-check-input" type="radio" name="state" id="state" value=1 ${rDto.state == '1' ? 'checked' : '' }
                                                 checked="">
                                             <label class="form-check-label" for="optionsRadios1">
                                                 공개
@@ -156,7 +156,7 @@
                                         </div>
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="state" id="state"
-                                                value="0">
+                                                value="0" ${rDto.state == '0' ? 'checked' : '' }>
                                             <label class="form-check-label" for="optionsRadios2">
                                                 비공개
                                             </label>
@@ -211,7 +211,7 @@
                     dataType: "json" // default : 응답의 mime 타입으로 유추함
                 }).done((res) => { // 20X 일때
                     alert(res.msg);
-                    location.href = "/resume/manageResume";
+                    location.href = "/user/resume";
                 }).fail((err) => { // 40X, 50X 일때
                     alert(err.responseJSON.msg);
                 });

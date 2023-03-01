@@ -5,14 +5,13 @@ import org.apache.ibatis.annotations.Param;
 
 import shop.mtcoding.project.dto.resume.ResumeReq.ResumeUpdateReqDto;
 import shop.mtcoding.project.dto.resume.ResumeReq.ResumeWriteReqDto;
+import shop.mtcoding.project.dto.user.UserResp.UserSkillRespDto;
 
 @Mapper
 public interface UserSkillRepository {
     public void findAll();
 
-    public void findById(
-
-    );
+    public UserSkillRespDto findById(Integer userId);
 
     public int insert(@Param("rDto") ResumeWriteReqDto rDto);
 

@@ -20,17 +20,22 @@ import shop.mtcoding.project.dto.resume.ResumeReq.ResumeWriteReqDto;
 import shop.mtcoding.project.dto.resume.ResumeResp.ResumeSaveRespDto;
 import shop.mtcoding.project.dto.user.ResponseDto;
 import shop.mtcoding.project.dto.user.UserResp.UserDataRespDto;
+import shop.mtcoding.project.dto.user.UserResp.UserSkillRespDto;
 import shop.mtcoding.project.exception.CustomApiException;
 import shop.mtcoding.project.exception.CustomException;
 import shop.mtcoding.project.model.Resume;
 import shop.mtcoding.project.model.ResumeRepository;
 import shop.mtcoding.project.model.User;
 import shop.mtcoding.project.model.UserRepository;
+import shop.mtcoding.project.model.UserSkillRepository;
 import shop.mtcoding.project.service.ResumeService;
 import shop.mtcoding.project.util.MockSession;
 
 @Controller
 public class ResumeController {
+
+    @Autowired
+    private UserSkillRepository userSkillRepository;
 
     @Autowired
     private UserRepository userRepository;
@@ -148,7 +153,9 @@ public class ResumeController {
             throw new CustomException("인증이 되지 않았습니다", HttpStatus.UNAUTHORIZED);
         }
         ResumeSaveRespDto rDto = resumeRepository.findById(id);
+        UserSkillRespDto usDto = userSkillRepository.findById(id);
         model.addAttribute("rDto", rDto);
+        model.addAttribute("usDto", usDto);
         return "resume/updateResumeForm";
     }
 

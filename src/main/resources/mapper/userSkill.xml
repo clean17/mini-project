@@ -9,9 +9,9 @@
         select * from user_skill_tb
     </select>
 
-    <!-- <select id="findById" resultType="shop.mtcoding.project.model.UserSkill">
-        select * from user_skill_tb user_id = #{uDto.userId}
-    </select> -->
+    <select id="findById" resultType="shop.mtcoding.project.dto.user.UserResp$UserSkillRespDto">
+        select * from user_skill_tb where user_id = #{rDto.userId}
+    </select>
 
     <insert id="insert" useGeneratedKeys="true"  keyProperty="rDto.resumeId">
         insert into user_skill_tb (user_id, skill_name1, skill_name2, skill_name3)
