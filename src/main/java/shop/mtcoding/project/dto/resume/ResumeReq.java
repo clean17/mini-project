@@ -55,9 +55,5 @@ public class ResumeReq {
         private String career;
         private String link;
         private Integer state;
-        private String skillName1;
-        private String skillName2;
-        private String skillName3;
-        private Timestamp createdAt;
     }
 }
