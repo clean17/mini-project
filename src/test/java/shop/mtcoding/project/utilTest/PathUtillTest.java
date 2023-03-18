@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.multipart.MultipartFile;
 
-import shop.mtcoding.project.exception.CustomException;
+import shop.mtcoding.project.config.exception.CustomException;
 
 public class PathUtillTest {
 

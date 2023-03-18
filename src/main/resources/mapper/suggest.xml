@@ -3,11 +3,11 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="shop.mtcoding.project.model.SuggestRepository">
-    <select id="findAll" resultType="shop.mtcoding.project.model.Suggest">
+<mapper namespace="shop.mtcoding.project.model.suggest.SuggestRepository">
+    <select id="findAll" resultType="shop.mtcoding.project.model.suggest.Suggest">
         select * from suggest_tb
     </select>
-    <select id="findById" resultType="shop.mtcoding.project.model.Suggest">
+    <select id="findById" resultType="shop.mtcoding.project.model.suggest.Suggest">
       select * from suggest_tb where suggest_id = #{suggestId}
     </select>
     

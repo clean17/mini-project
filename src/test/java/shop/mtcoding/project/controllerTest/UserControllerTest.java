@@ -23,7 +23,7 @@ import org.springframework.test.web.servlet.ResultActions;
 import org.springframework.transaction.annotation.Transactional;
 
 import shop.mtcoding.project.dto.user.UserReq.UserUpdateReqDto;
-import shop.mtcoding.project.model.User;
+import shop.mtcoding.project.model.user.User;
 
 @AutoConfigureMockMvc
 @SpringBootTest(webEnvironment = WebEnvironment.MOCK)

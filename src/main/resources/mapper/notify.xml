@@ -3,7 +3,7 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="shop.mtcoding.project.model.NotifyRepository">
+<mapper namespace="shop.mtcoding.project.model.notify.NotifyRepository">
     <select id="findByApplyId" resultType="shop.mtcoding.project.dto.notify.NotifyRespDto$NotifyRespStateDto">
         select state from notify_tb where apply_id = #{id}
     </select>
@@ -30,5 +30,4 @@
         </if>
             state = 0, created_at = now()
     </insert>
-
 </mapper>

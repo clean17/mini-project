@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import shop.mtcoding.project.dto.interest.InterestReq.InterestChangeReqDto;
 import shop.mtcoding.project.dto.interest.InterestResp.InterestChangeRespDto;
-import shop.mtcoding.project.model.InterestRepository;
+import shop.mtcoding.project.model.interest.InterestRepository;
 
 @MybatisTest
 public class InterestRepositoryTest {

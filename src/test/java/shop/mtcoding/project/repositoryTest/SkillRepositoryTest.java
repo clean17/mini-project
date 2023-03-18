@@ -8,7 +8,7 @@ import org.mybatis.spring.boot.test.autoconfigure.MybatisTest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
-import shop.mtcoding.project.model.SkillRepository;
+import shop.mtcoding.project.model.skill.SkillRepository;
 
 @MybatisTest
 public class SkillRepositoryTest {

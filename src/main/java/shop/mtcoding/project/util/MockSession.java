@@ -4,8 +4,8 @@ import java.sql.Timestamp;
 
 import javax.servlet.http.HttpSession;
 
-import shop.mtcoding.project.model.Comp;
-import shop.mtcoding.project.model.User;
+import shop.mtcoding.project.model.comp.Comp;
+import shop.mtcoding.project.model.user.User;
 
 public class MockSession {
 

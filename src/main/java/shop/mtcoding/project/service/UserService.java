@@ -6,15 +6,14 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 
+import shop.mtcoding.project.config.exception.CustomApiException;
+import shop.mtcoding.project.config.exception.CustomException;
 import shop.mtcoding.project.dto.user.UserReq.UserJoinReqDto;
 import shop.mtcoding.project.dto.user.UserReq.UserLoginReqDto;
 import shop.mtcoding.project.dto.user.UserReq.UserUpdatePhotoReqDto;
 import shop.mtcoding.project.dto.user.UserReq.UserUpdateReqDto;
-import shop.mtcoding.project.exception.CustomApiException;
-import shop.mtcoding.project.exception.CustomException;
-import shop.mtcoding.project.model.User;
-import shop.mtcoding.project.model.UserRepository;
-
+import shop.mtcoding.project.model.user.User;
+import shop.mtcoding.project.model.user.UserRepository;
 import shop.mtcoding.project.util.PathUtil;
 
 import shop.mtcoding.project.util.Sha256;

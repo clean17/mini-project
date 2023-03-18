@@ -22,7 +22,7 @@ import org.springframework.test.web.servlet.ResultActions;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import shop.mtcoding.project.dto.jobs.JobsReq.JobsWriteReqDto;
-import shop.mtcoding.project.model.Comp;
+import shop.mtcoding.project.model.comp.Comp;
 
 @AutoConfigureMockMvc
 @SpringBootTest(webEnvironment = WebEnvironment.MOCK)

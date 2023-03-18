@@ -10,10 +10,10 @@ import org.springframework.util.ObjectUtils;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
+import shop.mtcoding.project.config.exception.CustomApiException;
 import shop.mtcoding.project.dto.common.ResponseDto;
 import shop.mtcoding.project.dto.interest.InterestReq.InterestChangeReqDto;
-import shop.mtcoding.project.exception.CustomApiException;
-import shop.mtcoding.project.model.User;
+import shop.mtcoding.project.model.user.User;
 import shop.mtcoding.project.service.InterestService;
 
 @Controller

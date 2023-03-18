@@ -7,7 +7,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import shop.mtcoding.project.dto.suggest.SuggestReq.SuggestReqDto;
 import shop.mtcoding.project.dto.suggest.SuggestReq.SuggestUpdateReqDto;
-import shop.mtcoding.project.model.SuggestRepository;
+import shop.mtcoding.project.model.suggest.SuggestRepository;
 
 @MybatisTest
 public class SuggestRepositoryTest {

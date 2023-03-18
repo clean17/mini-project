@@ -9,8 +9,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 import shop.mtcoding.project.dto.apply.ApplyReq.ApplyReqDto;
 import shop.mtcoding.project.dto.apply.ApplyReq.ApplyUpdateReqDto;
-import shop.mtcoding.project.model.Apply;
-import shop.mtcoding.project.model.ApplyRepository;
+import shop.mtcoding.project.model.apply.Apply;
+import shop.mtcoding.project.model.apply.ApplyRepository;
 
 @MybatisTest
 public class ApplyRepositoryTest {

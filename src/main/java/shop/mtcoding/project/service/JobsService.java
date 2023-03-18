@@ -6,14 +6,14 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.ObjectUtils;
 
+import shop.mtcoding.project.config.exception.CustomApiException;
 import shop.mtcoding.project.dto.jobs.JobsReq.JobsSearchReqDto;
 import shop.mtcoding.project.dto.jobs.JobsReq.JobsUpdateReqDto;
 import shop.mtcoding.project.dto.jobs.JobsReq.JobsWriteReqDto;
-import shop.mtcoding.project.exception.CustomApiException;
-import shop.mtcoding.project.model.CompRepository;
-import shop.mtcoding.project.model.Jobs;
-import shop.mtcoding.project.model.JobsRepository;
-import shop.mtcoding.project.model.SkillRepository;
+import shop.mtcoding.project.model.comp.CompRepository;
+import shop.mtcoding.project.model.jobs.Jobs;
+import shop.mtcoding.project.model.jobs.JobsRepository;
+import shop.mtcoding.project.model.skill.SkillRepository;
 
 @Transactional(readOnly = true)
 @Service

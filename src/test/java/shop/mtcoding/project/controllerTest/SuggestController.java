@@ -21,9 +21,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import shop.mtcoding.project.dto.suggest.SuggestReq.SuggestReqDto;
 import shop.mtcoding.project.dto.suggest.SuggestReq.SuggestUpdateReqDto;
-import shop.mtcoding.project.model.Comp;
-import shop.mtcoding.project.model.SuggestRepository;
-import shop.mtcoding.project.model.User;
+import shop.mtcoding.project.model.comp.Comp;
+import shop.mtcoding.project.model.suggest.SuggestRepository;
+import shop.mtcoding.project.model.user.User;
 
 @AutoConfigureMockMvc
 @SpringBootTest(webEnvironment = WebEnvironment.MOCK)

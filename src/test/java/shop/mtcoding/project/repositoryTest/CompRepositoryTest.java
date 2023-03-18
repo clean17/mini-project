@@ -11,7 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import shop.mtcoding.project.dto.comp.CompReq.CompJoinReqDto;
 import shop.mtcoding.project.dto.jobs.JobsReq.JobsUpdateReqDto;
-import shop.mtcoding.project.model.CompRepository;
+import shop.mtcoding.project.model.comp.CompRepository;
 
 @MybatisTest
 public class CompRepositoryTest {

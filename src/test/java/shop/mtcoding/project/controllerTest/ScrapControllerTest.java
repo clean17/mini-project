@@ -23,7 +23,7 @@ import shop.mtcoding.project.dto.scrap.CompScrapReq.CompDeleteScrapReqDto;
 import shop.mtcoding.project.dto.scrap.CompScrapReq.CompInsertScrapReqDto;
 import shop.mtcoding.project.dto.scrap.UserScrapReq.UserDeleteScrapReqDto;
 import shop.mtcoding.project.dto.scrap.UserScrapReq.UserInsertScrapReqDto;
-import shop.mtcoding.project.model.User;
+import shop.mtcoding.project.model.user.User;
 
 @AutoConfigureMockMvc
 @SpringBootTest(webEnvironment = WebEnvironment.MOCK)

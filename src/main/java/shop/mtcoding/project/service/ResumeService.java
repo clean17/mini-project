@@ -6,12 +6,12 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.ObjectUtils;
 
+import shop.mtcoding.project.config.exception.CustomApiException;
 import shop.mtcoding.project.dto.resume.ResumeReq.ResumeUpdateReqDto;
 import shop.mtcoding.project.dto.resume.ResumeReq.ResumeWriteReqDto;
-import shop.mtcoding.project.exception.CustomApiException;
-import shop.mtcoding.project.model.Resume;
-import shop.mtcoding.project.model.ResumeRepository;
-import shop.mtcoding.project.model.SkillRepository;
+import shop.mtcoding.project.model.resume.Resume;
+import shop.mtcoding.project.model.resume.ResumeRepository;
+import shop.mtcoding.project.model.skill.SkillRepository;
 
 @Service
 public class ResumeService {

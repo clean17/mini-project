@@ -3,8 +3,8 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="shop.mtcoding.project.model.InterestRepository">
-    <select id="findAll" resultType="shop.mtcoding.project.model.Interest">
+<mapper namespace="shop.mtcoding.project.model.interest.InterestRepository">
+    <select id="findAll" resultType="shop.mtcoding.project.model.interest.Interest">
         select * from interest_tb
     </select>
 

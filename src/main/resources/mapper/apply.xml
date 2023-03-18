@@ -3,15 +3,15 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="shop.mtcoding.project.model.ApplyRepository">
-    <select id="findAll" resultType="shop.mtcoding.project.model.Apply">
+<mapper namespace="shop.mtcoding.project.model.apply.ApplyRepository">
+    <select id="findAll" resultType="shop.mtcoding.project.model.apply.Apply">
         select * from apply_tb
     </select>
-    <select id="findByApplyId" resultType="shop.mtcoding.project.model.Apply">
+    <select id="findByApplyId" resultType="shop.mtcoding.project.model.apply.Apply">
       select * from apply_tb where apply_id = #{applyId}
   </select>
 
-  <select id="findByUserIdToNotice" resultType="shop.mtcoding.project.model.Apply">
+  <select id="findByUserIdToNotice" resultType="shop.mtcoding.project.model.apply.Apply">
     select a.apply_id, a.resume_id, a.jobs_id, a.state, r.user_id FROM apply_tb a join resume_tb r
       on a.resume_id = r.resume_id join user_tb u
       on u.user_id = r.user_id

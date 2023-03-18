@@ -29,8 +29,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import shop.mtcoding.project.dto.resume.ResumeReq.ResumeWriteReqDto;
 import shop.mtcoding.project.dto.resume.ResumeResp.ResumeManageRespDto;
-import shop.mtcoding.project.model.Comp;
-import shop.mtcoding.project.model.User;
+import shop.mtcoding.project.model.comp.Comp;
+import shop.mtcoding.project.model.user.User;
 
 @AutoConfigureMockMvc
 @SpringBootTest(webEnvironment = WebEnvironment.MOCK)

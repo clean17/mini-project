@@ -17,8 +17,8 @@ import shop.mtcoding.project.dto.jobs.JobsReq.JobsWriteReqDto;
 import shop.mtcoding.project.dto.jobs.JobsResp.JobsMainRespDto;
 import shop.mtcoding.project.dto.jobs.JobsResp.JobsSearchRespDto;
 import shop.mtcoding.project.dto.jobs.JobsResp.JobsSuggestRespDto;
-import shop.mtcoding.project.model.Jobs;
-import shop.mtcoding.project.model.JobsRepository;
+import shop.mtcoding.project.model.jobs.Jobs;
+import shop.mtcoding.project.model.jobs.JobsRepository;
 
 @MybatisTest
 public class JobsRepositoryTest {

@@ -18,6 +18,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
+import shop.mtcoding.project.config.exception.CustomApiException;
+import shop.mtcoding.project.config.exception.CustomException;
 import shop.mtcoding.project.dto.apply.ApplyResp.ApplytoCompRespDto;
 import shop.mtcoding.project.dto.common.ResponseDto;
 import shop.mtcoding.project.dto.resume.ResumeReq.ResumeCheckboxReqDto;
@@ -30,16 +32,14 @@ import shop.mtcoding.project.dto.resume.ResumeResp.ResumeSearchRespDto;
 import shop.mtcoding.project.dto.skill.ResumeSkillResp.ResumeSkillRespDto;
 import shop.mtcoding.project.dto.suggest.SuggestResp.SuggestToCompRespIdDto;
 import shop.mtcoding.project.dto.user.UserResp.UserDataRespDto;
-import shop.mtcoding.project.exception.CustomApiException;
-import shop.mtcoding.project.exception.CustomException;
-import shop.mtcoding.project.model.Apply;
-import shop.mtcoding.project.model.ApplyRepository;
-import shop.mtcoding.project.model.Comp;
-import shop.mtcoding.project.model.ResumeRepository;
-import shop.mtcoding.project.model.SkillRepository;
-import shop.mtcoding.project.model.SuggestRepository;
-import shop.mtcoding.project.model.User;
-import shop.mtcoding.project.model.UserRepository;
+import shop.mtcoding.project.model.apply.Apply;
+import shop.mtcoding.project.model.apply.ApplyRepository;
+import shop.mtcoding.project.model.comp.Comp;
+import shop.mtcoding.project.model.resume.ResumeRepository;
+import shop.mtcoding.project.model.skill.SkillRepository;
+import shop.mtcoding.project.model.suggest.SuggestRepository;
+import shop.mtcoding.project.model.user.User;
+import shop.mtcoding.project.model.user.UserRepository;
 import shop.mtcoding.project.service.ResumeService;
 
 @Controller

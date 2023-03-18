@@ -6,13 +6,13 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 
+import shop.mtcoding.project.config.exception.CustomApiException;
+import shop.mtcoding.project.config.exception.CustomException;
 import shop.mtcoding.project.dto.comp.CompReq.CompJoinReqDto;
 import shop.mtcoding.project.dto.comp.CompReq.CompLoginReqDto;
 import shop.mtcoding.project.dto.comp.CompReq.CompUpdateReqDto;
-import shop.mtcoding.project.exception.CustomApiException;
-import shop.mtcoding.project.exception.CustomException;
-import shop.mtcoding.project.model.Comp;
-import shop.mtcoding.project.model.CompRepository;
+import shop.mtcoding.project.model.comp.Comp;
+import shop.mtcoding.project.model.comp.CompRepository;
 import shop.mtcoding.project.util.PathUtil;
 import shop.mtcoding.project.util.Sha256;
 

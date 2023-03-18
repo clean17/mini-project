@@ -20,7 +20,7 @@ import org.springframework.test.web.servlet.ResultActions;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import shop.mtcoding.project.dto.interest.InterestReq.InterestChangeReqDto;
-import shop.mtcoding.project.model.User;
+import shop.mtcoding.project.model.user.User;
 
 @AutoConfigureMockMvc
 @SpringBootTest(webEnvironment = WebEnvironment.MOCK)

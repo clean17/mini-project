@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import shop.mtcoding.project.dto.scrap.CompScrapReq.CompInsertScrapReqDto;
 import shop.mtcoding.project.dto.scrap.UserScrapReq.UserInsertScrapReqDto;
-import shop.mtcoding.project.model.ScrapRepository;
+import shop.mtcoding.project.model.scrap.ScrapRepository;
 
 @MybatisTest
 public class ScrapRepositoryTest {

@@ -3,11 +3,11 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="shop.mtcoding.project.model.JobsRepository">
-    <select id="findAll" resultType="shop.mtcoding.project.model.Jobs">
+<mapper namespace="shop.mtcoding.project.model.jobs.JobsRepository">
+    <select id="findAll" resultType="shop.mtcoding.project.model.jobs.Jobs">
         select * from jobs_tb
     </select>
-    <select id="findById" resultType="shop.mtcoding.project.model.Jobs">
+    <select id="findById" resultType="shop.mtcoding.project.model.jobs.Jobs">
       select * from jobs_tb where jobs_id = #{jobsId}
     </select>
 
@@ -15,9 +15,7 @@
       select jobs_id from jobs_tb where comp_id = #{compId}
     </select>
 
-    <select id="findByResumeId" resultType="shop.mtcoding.project.model.Resume">
-        select * from resume_tb where resume_id = #{resumeId}
-    </select>
+
 
     <select id="findAlltoMain" resultType="shop.mtcoding.project.dto.jobs.JobsResp$JobsMainRespDto">
       select j.jobs_id, ( select comp_name from comp_tb where comp_id = j.comp_id) compName, 

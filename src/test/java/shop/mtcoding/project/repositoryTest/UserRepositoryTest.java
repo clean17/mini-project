@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import shop.mtcoding.project.dto.user.UserReq.UserJoinReqDto;
 import shop.mtcoding.project.dto.user.UserReq.UserUpdateReqDto;
-import shop.mtcoding.project.model.UserRepository;
+import shop.mtcoding.project.model.user.UserRepository;
 
 @MybatisTest
 public class UserRepositoryTest {

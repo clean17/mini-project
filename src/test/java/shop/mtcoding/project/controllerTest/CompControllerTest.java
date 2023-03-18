@@ -29,7 +29,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 import shop.mtcoding.project.dto.comp.CompReq.CompUpdateReqDto;
 import shop.mtcoding.project.dto.resume.ResumeResp;
-import shop.mtcoding.project.model.Comp;
+import shop.mtcoding.project.model.comp.Comp;
 
 @AutoConfigureMockMvc
 @SpringBootTest(webEnvironment = WebEnvironment.MOCK)

@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
+import shop.mtcoding.project.config.exception.CustomApiException;
 import shop.mtcoding.project.dto.apply.ApplyReq.ApplyReqDto;
 import shop.mtcoding.project.dto.apply.ApplyReq.ApplyUpdateReqDto;
 import shop.mtcoding.project.dto.common.ResponseDto;
-import shop.mtcoding.project.exception.CustomApiException;
-import shop.mtcoding.project.model.Comp;
-import shop.mtcoding.project.model.User;
+import shop.mtcoding.project.model.comp.Comp;
+import shop.mtcoding.project.model.user.User;
 import shop.mtcoding.project.service.ApplyService;
 
 @Controller

@@ -14,9 +14,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import shop.mtcoding.project.dto.jobs.JobsResp.JobsMainRecommendRespDto;
 import shop.mtcoding.project.dto.jobs.JobsResp.JobsMainRespDto;
 import shop.mtcoding.project.dto.skill.RequiredSkillReq.RequiredSkillWriteReqDto;
-import shop.mtcoding.project.model.JobsRepository;
-import shop.mtcoding.project.model.SkillRepository;
-import shop.mtcoding.project.model.User;
+import shop.mtcoding.project.model.jobs.JobsRepository;
+import shop.mtcoding.project.model.skill.SkillRepository;
+import shop.mtcoding.project.model.user.User;
 import shop.mtcoding.project.util.DateUtil;
 
 @Controller

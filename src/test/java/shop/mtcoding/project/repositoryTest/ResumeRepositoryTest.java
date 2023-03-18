@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 import shop.mtcoding.project.dto.resume.ResumeReq.ResumeWriteReqDto;
 import shop.mtcoding.project.dto.resume.ResumeResp.ResumeDetailRespDto;
 import shop.mtcoding.project.dto.resume.ResumeResp.ResumeReadRespDto;
-import shop.mtcoding.project.model.ResumeRepository;
+import shop.mtcoding.project.model.resume.ResumeRepository;
 
 @MybatisTest
 public class ResumeRepositoryTest {

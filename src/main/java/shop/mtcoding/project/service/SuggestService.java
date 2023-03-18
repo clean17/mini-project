@@ -5,15 +5,15 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import shop.mtcoding.project.config.exception.CustomApiException;
 import shop.mtcoding.project.dto.suggest.SuggestReq.SuggestReqDto;
 import shop.mtcoding.project.dto.suggest.SuggestReq.SuggestUpdateReqDto;
-import shop.mtcoding.project.exception.CustomApiException;
-import shop.mtcoding.project.model.Jobs;
-import shop.mtcoding.project.model.JobsRepository;
-import shop.mtcoding.project.model.Resume;
-import shop.mtcoding.project.model.ResumeRepository;
-import shop.mtcoding.project.model.Suggest;
-import shop.mtcoding.project.model.SuggestRepository;
+import shop.mtcoding.project.model.jobs.Jobs;
+import shop.mtcoding.project.model.jobs.JobsRepository;
+import shop.mtcoding.project.model.resume.Resume;
+import shop.mtcoding.project.model.resume.ResumeRepository;
+import shop.mtcoding.project.model.suggest.Suggest;
+import shop.mtcoding.project.model.suggest.SuggestRepository;
 
 @Transactional(readOnly = true)
 @Service

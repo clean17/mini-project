@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.mybatis.spring.boot.test.autoconfigure.MybatisTest;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import shop.mtcoding.project.model.NotifyRepository;
+import shop.mtcoding.project.model.notiify.NotifyRepository;
 
 @MybatisTest
 public class NotifyRepositoryTest {
