@@ -108,3 +108,13 @@ create table notify_tb(
     state int not null,
     created_at timestamp
 );
+
+create table help_tb(
+    help_id int auto_increment primary key,
+    user_id int not null,
+    title varchar not null,
+    content varchar not null,
+    email varchar not null,
+    tel int not null,
+    created_at timestamp
+);

@@ -151,4 +151,7 @@ insert into notify_tb (apply_id, suggest_id, state, created_at) values (null, 1,
 insert into notify_tb (apply_id, suggest_id, state, created_at) values (null, 2, 0, now());
 insert into notify_tb (apply_id, suggest_id, state, created_at) values (null, 3, 0, now());
 
+insert into help_tb (user_id, title, content, email, tel, created_at) values (1, '제목테스트', '내용테스트', 'ssar@nate.com', '01231241', now());
+insert into help_tb (user_id, title, content, email, tel, created_at) values (1, '제목테스트111', '내용테스트22', 'ssar@nate.com', '01231241', now());
+
 commit;

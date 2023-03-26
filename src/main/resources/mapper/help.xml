@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="shop.mtcoding.project.model.help.HelpRepository">
+    <insert id="insert">
+        insert into help_tb (user_id, title, content, email, tel, created_at)
+            values ( #{hDto.userId}, #{hDto.title}, #{hDto.content}, #{hDto.email}, #{hDto.tel}, now());
+    </insert>
+
+    <select id= "findByUserId" resultType="shop.mtcoding.project.dto.help.HelpReq$HelpDetailRespDto">
+        select user_id, email, title, content, created_at
+        from help_tb
+        where user_id = #{userId}
+    </select> 
+
+    <delete id="deleteById">
+        delete from help_tb where id = #{helpId}
+    </delete>
+
+</mapper>
+   
