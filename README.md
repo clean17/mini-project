@@ -50,7 +50,7 @@
 - 개인 - 공고 스크랩
 - 기업 - 이력서 스크랩
 - SHA-256 암호화
-- 지원, 제안 알림서비스 (x)
+- 지원, 제안 알림서비스
 - 비밀번호 찾기 (x)
 - 이메일 찾기 (x)
 
@@ -87,7 +87,7 @@ testImplementation group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-
 
 > ## 기술 블로그
 
-- 추가 예정
+- <a href="https://velog.io/@merci/series/%EA%B5%AC%EC%9D%B8%EA%B5%AC%EC%A7%81-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8">블로그 링크</a>
 
 <br>
 
