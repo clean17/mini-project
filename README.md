@@ -1,14 +1,15 @@
 # 구인구직 사이트 제작
 > ## 시연영상
-- 구직자 시나리오 영상
-https://www.youtube.com/watch?v=4_x91KnOMYU
-- 구인기업 시나리오 영상
-https://www.youtube.com/watch?v=osN8bGS7tzQ
 
+
+<a href="https://www.youtube.com/watch?v=JcPlD1fuNs0&ab_channel=%EB%A9%94%ED%83%80%EC%BD%94%EB%94%A9">![image](https://user-images.githubusercontent.com/118657689/234797375-8e1ca1f4-aac7-4365-9fd1-49b2c115aaea.png)</a>
 <br>
 
-> ## 발표자료
-- [6조_미니프로젝트1_PPT.pdf](https://github.com/clean17/mini-project/files/11340940/6._.1_PPT.pdf)
+
+> ## 발표자료 ( PDF )
+<a href="[6조_미니프로젝트1_PPT.pdf](https://github.com/clean17/mini-project/files/11340940/6._.1_PPT.pdf)">![image](https://user-images.githubusercontent.com/118657689/234799285-04c5ef06-3bde-40fd-8068-2ae6b5630770.png)</a>
+
+
 
 
 <br>
