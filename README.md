@@ -1,4 +1,16 @@
 # 구인구직 사이트 제작
+> ## 시연영상
+- 구직자 시나리오 영상
+https://www.youtube.com/watch?v=4_x91KnOMYU
+- 구인기업 시나리오 영상
+https://www.youtube.com/watch?v=osN8bGS7tzQ
+
+<br>
+
+> ## 발표자료
+- [6조_미니프로젝트1_PPT.pptx](https://github.com/clean17/mini-project/files/11340813/6._.1_PPT.pptx)
+
+<br>
 
 > ## 프로젝트 소개
 - 구직자와 구인회사가 서로의 이력과 공고를 등록, 구직자는 공고를 통해 입사지원을 하고 구인회사는 공개된 이력서나 지원된 이력서를 통해서 구인을 한다.
@@ -147,13 +159,7 @@ testImplementation group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-
 <br>
 
 
-> ## 시연영상
-- 구직자 시나리오 영상
-https://www.youtube.com/watch?v=4_x91KnOMYU
-- 구인기업 시나리오 영상
-https://www.youtube.com/watch?v=osN8bGS7tzQ
 
-<br>
 
 > ## 보완점
 - 편의 기능이 필요해 보인다.( 알림, 이메일, 비밀번호 찾기 기능 )
