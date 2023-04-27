@@ -7,9 +7,9 @@
 
 
 > ## 발표자료 ( PDF )
-<a href="[6조_미니프로젝트1_PPT.pdf](https://github.com/clean17/mini-project/files/11340940/6._.1_PPT.pdf)">![image](https://user-images.githubusercontent.com/118657689/234799285-04c5ef06-3bde-40fd-8068-2ae6b5630770.png)</a>
+![image](https://user-images.githubusercontent.com/118657689/234799285-04c5ef06-3bde-40fd-8068-2ae6b5630770.png)
 
-
+- [6조_미니프로젝트1_PPT.pdf](https://github.com/clean17/mini-project/files/11340940/6._.1_PPT.pdf)
 
 
 <br>
