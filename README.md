@@ -1,5 +1,5 @@
 # 구인구직 사이트 제작
-> ## 시연영상
+> ## 시연영상 ( Youtube )
 
 
 <a href="https://www.youtube.com/watch?v=JcPlD1fuNs0&ab_channel=%EB%A9%94%ED%83%80%EC%BD%94%EB%94%A9">![image](https://user-images.githubusercontent.com/118657689/234797375-8e1ca1f4-aac7-4365-9fd1-49b2c115aaea.png)</a>
