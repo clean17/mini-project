@@ -8,7 +8,8 @@ https://www.youtube.com/watch?v=osN8bGS7tzQ
 <br>
 
 > ## 발표자료
-- [6조_미니프로젝트1_PPT.pptx](https://github.com/clean17/mini-project/files/11340813/6._.1_PPT.pptx)
+- [6조_미니프로젝트1_PPT.pdf](https://github.com/clean17/mini-project/files/11340940/6._.1_PPT.pdf)
+
 
 <br>
 
