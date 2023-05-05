@@ -1,4 +1,5 @@
 # 구인구직 사이트 제작
+
 > ## 시연영상 ( Youtube )
 
 
@@ -7,24 +8,27 @@
 
 
 > ## 발표자료 ( PDF )
+
 ![image](https://user-images.githubusercontent.com/118657689/234799285-04c5ef06-3bde-40fd-8068-2ae6b5630770.png)
 
-- [6조_미니프로젝트1_PPT.pdf](https://github.com/clean17/mini-project/files/11340940/6._.1_PPT.pdf)
-
+- <a href="https://github.com/clean17/mini-project/files/11340940/6._.1_PPT.pdf">[6조_미니프로젝트1_PPT.pdf]</a>
 
 <br>
 
 > ## 프로젝트 소개
+
 - 구직자와 구인회사가 서로의 이력과 공고를 등록, 구직자는 공고를 통해 입사지원을 하고 구인회사는 공개된 이력서나 지원된 이력서를 통해서 구인을 한다.
 
 <br>
 
 > ## 프로젝트 기간
+
 - 2023-02-22 ~ 2023.03.07
 
 <br>
 
 > ## 기술 스택
+
 - JDK 11
 - Spring Boot 2.7.8
 - MyBatis
@@ -36,6 +40,7 @@
 <br>
 
 > ## 기능정리
+
 ### 1단계
 - 메인화면 레이아웃 ( 공고 목록, 헤더, 푸터, 로그인아이콘 )
 - 개인 - 회원가입, 로그인
@@ -93,6 +98,7 @@ testImplementation group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-
 <br>
 
 > ## 테이블 모델링
+
 <br>
 
 ![mini-project-table](https://user-images.githubusercontent.com/118657689/236421490-b34233fe-337d-4bb0-80e6-27d4f09006c5.jpg)
@@ -107,6 +113,7 @@ testImplementation group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-
 <br>
 
 > ## 담당 기능
+
 - 박인우 (팀장) 
     - 테이블 설계 및 모델링, 정규화
     - 간단한 유틸 클래스 제공
@@ -170,12 +177,14 @@ testImplementation group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-
 <br>
 
 > ## 보완점
+
 - 편의 기능이 필요해 보인다.( 알림, 이메일, 비밀번호 찾기 기능 )
 - 한번 완료한 기능을 다시 테스트 하지 않도록 완벽함이 필요하다.
 
 <br>
 
 > ## 후기
+
 - 박인우
 
 
