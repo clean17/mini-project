@@ -19,8 +19,6 @@
       and a.state in (-1,1)
   </select>
 
-
-
   <select id="findByCompIdAndApplyId" resultType="shop.mtcoding.project.dto.apply.ApplyResp$ApplytoCompRespDto">
     select apply_id, state from apply_tb a join jobs_tb j
       on a.jobs_id = j.jobs_id 

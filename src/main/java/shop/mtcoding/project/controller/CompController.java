@@ -48,7 +48,6 @@ import shop.mtcoding.project.model.skill.SkillRepository;
 import shop.mtcoding.project.model.suggest.SuggestRepository;
 import shop.mtcoding.project.service.CompService;
 import shop.mtcoding.project.util.DateUtil;
-import shop.mtcoding.project.util.MockSession;
 import shop.mtcoding.project.util.Sha256;
 
 @Controller
@@ -335,7 +334,6 @@ public class CompController {
     public String readResume(Model model) {
         List<ResumeReadRespDto> rLists = resumeRepository.findAllResumebyState();
         for (ResumeReadRespDto rList : rLists) {
-            // System.out.println("테스트 : " + rList.toString());
             List<String> insertList = new ArrayList<>();
             for (ResumeSkillRespDto skill : skillRepository.findByResumeSkill(rList.getResumeId())) {
                 insertList.add(skill.getSkill());

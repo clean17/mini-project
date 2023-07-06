@@ -70,8 +70,7 @@
           </foreach>
           and
         </if>
-        r.career regexp #{resumeDto.career} 
-        )
+        r.career regexp #{resumeDto.career}         
         group by r.resume_id
     </select>
 

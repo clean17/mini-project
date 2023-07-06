@@ -54,9 +54,6 @@
 - 비밀번호 찾기 (x)
 - 이메일 찾기 (x)
 
-### 5단계
-- 페이징 (x)
-- Redis (x)
 
 <br>
 
@@ -182,3 +179,106 @@ https://www.youtube.com/watch?v=osN8bGS7tzQ
 
   어려웠지만 그만큼 재미있었고 뿌듯한 시간이었습니다
 
+> ## 기타 메모
+<br>
+
+- D-day 계산
+
+```java
+import java.sql.Timestamp;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
+
+    public static long dDay(Timestamp stamp) {
+        LocalDate fromDate = LocalDate.now();
+        LocalDate toDate = LocalDate.parse(
+              stamp.toLocalDateTime()
+                  .format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
+        return ChronoUnit.DAYS.between(fromDate, toDate); 
+    }
+```
+
+- Sha-256 해시
+
+```java
+import java.security.MessageDigest;
+
+public class Sha256 {
+    public static String encode(String password1) {
+        String password = "salt" + password1;
+        String SHA = "";
+        try {
+            MessageDigest sh = MessageDigest.getInstance("SHA-256");
+            sh.update(password.getBytes());
+            byte bytes[] = sh.digest(); 
+            StringBuffer sb = new StringBuffer();
+            for (byte b : bytes) {
+                sb.append(String.format("%02x", b));
+            }
+            SHA = sb.toString();
+        } catch (Exception e) {
+            e.printStackTrace();
+            SHA = null;
+        }
+        return SHA;
+    }
+}
+```
+
+- 로그인 구현되기 전에 로그인 기능 테스트 하기 위해서 MockSession 메소드를 만들어서 세션을 생성합니다.
+
+- 인터셉터에서 특정 주소를 막으려면 `HttpServletRequest`의 `getRequestURI()` 메소드로 가져온 uri 정보를 `startsWith()`로 확인합니다.  <br>
+이후 `request.getSession().getAttribute()` 으로 세션을 확인합니다.
+
+- MyBatis에 매핑할때 매개변수를 `@Param()`으로 하나하나 연결하지 말고 오브젝트 타입으로 하나만 연결하면 편합니다.
+
+```java
+public int insert(@Param("aDto")  ApplyReqDto aDto);
+```
+
+- 데이터 검증은 `org.assertj.core.api.Assertions` 패키지의 `Assertions.assertThat(A).isEqualTo(B)`를 이용합니다.
+
+- 간단한 통합 테스트 환경은 아래 구성입니다.
+
+```java
+@AutoConfigureMockMvc
+@SpringBootTest
+public class ControllerTest {
+    @Autowired
+    private MockMvc mvc;
+    //
+}
+```
+
+- DTO가 많을 경우 관리가 힘들게 됩니다. <br>
+해결방법은 DDD설계를 적용하는 방법이 있고 공통된 특성을 부모클래스에 모아서 상속하는 방법이 있습니다.<br>
+또 다른 방법은 매핑 라이브러리를 이용하는 방법이 있습니다. ( ex. MapStruct )<br>
+
+- 동적 쿼리를 이용하는 방법
+
+```xml
+    <if test="jDto.skill != null and jDto.skill.size() > 0">
+        skill in
+        <foreach collection="jDto.skill" item="skill" open="(" close=")" separator=",">
+        #{skill} 
+        </foreach>
+        and
+    </if>
+```
+
+- 경로를 찾을때 `/`로 시작하면 절대 경로, 시작하지 않으면 상대 경로 입니다.<br>
+따라서 `/` 는 정적 리소스를 관리하는 static 디렉토리가 됩니다.
+
+-  Bootstrap, jQuery, Font Awesome, Summernote 의존성
+
+```html
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/32aa2b8683.js" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+```

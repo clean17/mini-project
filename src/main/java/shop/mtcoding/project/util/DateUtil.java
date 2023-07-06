@@ -15,8 +15,9 @@ public class DateUtil {
         LocalDate fromDate = LocalDate.now();
         LocalDate toDate = LocalDate.parse(stamp.toLocalDateTime().format(DateTimeFormatter.ofPattern("yyyy-MM-dd")));
 
-        // ChronoUnit.DAYS.between
         // System.out.println(ChronoUnit.DAYS.between(fromDate, toDate));
-        return ChronoUnit.DAYS.between(fromDate, toDate);
+        return ChronoUnit.DAYS.between(fromDate, toDate); // 시간 차
+        // ChronoUnit -> LocalDate, LocalDateTime, Duration 등과 함께 사용되어 날짜 및 시간 연산을 수행
+        // 시간 단위를 쉽게 다룰 수 있도록
     }
 }

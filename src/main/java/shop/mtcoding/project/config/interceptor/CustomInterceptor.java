@@ -16,15 +16,15 @@ public class CustomInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
             throws Exception {
         String requestURI = request.getRequestURI();
-        if (requestURI.startsWith("/user")) { // "/blocked"로 시작하는 요청을 차단
+        if (requestURI.startsWith("/user")) { 
             User principal = (User) request.getSession().getAttribute("principal");
             if (principal == null) {
-                // System.out.println("테스트 : 세션이 없어 !!!");
+                // System.out.println("테스트 : 세션이 없어");
                 response.sendRedirect("/user/login");
                 return false;
             }
         }
-        if (requestURI.startsWith("/comp")) { // "/blocked"로 시작하는 요청을 차단
+        if (requestURI.startsWith("/comp")) { 
             Comp compSession = (Comp) request.getSession().getAttribute("compSession");
             if (compSession == null) {
                 response.sendRedirect("/comp/login");
@@ -32,18 +32,6 @@ public class CustomInterceptor implements HandlerInterceptor {
             }
         }
         return true;
-
-        // System.out.println("테스트 : "+ request.getRequestURL().toString());
-        // if
-        // (request.getRequestURL().toString().equals("http://localhost:8080/user/**"))
-        // {
-
-        // }
-        // if
-        // (request.getRequestURL().toString().equals("http://localhost:8080/comp/**"))
-        // {
-
-        // }
     }
 
     @Override

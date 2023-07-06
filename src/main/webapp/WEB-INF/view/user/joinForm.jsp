@@ -128,6 +128,19 @@
             alert(err.responseJSON.msg);
         });
     }
+    $.ajax({
+        type: "",
+        url: "/",
+        data: JSON.stringify(),
+        headers:{
+            "content-type":"application/json; charset=utf-8"
+        },
+        dataType:"json"
+    }).done((res) => {
+    
+    }).fail((err) => {
+    
+    });
 
 </script>
  <%@ include file="../layout/footer.jsp" %>

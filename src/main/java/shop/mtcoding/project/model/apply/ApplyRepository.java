@@ -41,7 +41,6 @@ public interface ApplyRepository {
         @Param("aDto")  ApplyUpdateReqDto aDto
     );
     public int deleteById(
-
     );
 
 

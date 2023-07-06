@@ -7,7 +7,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import java.sql.Timestamp;
-import com.fasterxml.jackson.databind.ObjectMapper;
+
 import javax.servlet.http.HttpSession;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -21,6 +21,8 @@ import org.springframework.mock.web.MockHttpSession;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultActions;
 import org.springframework.transaction.annotation.Transactional;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import shop.mtcoding.project.dto.user.UserReq.UserUpdateReqDto;
 import shop.mtcoding.project.model.user.User;
@@ -113,7 +115,7 @@ public class UserControllerTest {
                 .contentType(MediaType.APPLICATION_FORM_URLENCODED_VALUE));
 
         HttpSession session = resultActions.andReturn().getRequest().getSession();
-        User principal = (User) session.getAttribute("principal");
+        User principal = session != null ? (User) session.getAttribute("principal") : null;
 
         // then
         assertThat(principal.getEmail()).isEqualTo("ssar@nate.com");

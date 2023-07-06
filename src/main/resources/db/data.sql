@@ -28,6 +28,25 @@ values ('ncsoft@nate.com', 'ea32961dbd579ef5697c367f9267921ee07f14d77fb2d4fb9500
 -- insert into comp_tb (email, password, comp_name, representative_name, business_number, photo,  homepage, created_at)
 -- values ('samsung@nate.com', 'ea32961dbd579ef5697c367f9267921ee07f14d77fb2d4fb9500d4221d615695', '삼성', '이재용', '111-22-33333', '/images/daiso1.png', 'www.kakao.com',now());
 
+insert into student (name, score, absent) values ('홍길동', 95, 1);
+insert into student (name, score, absent) values ('춘향이', 72, 0);
+insert into student (name, score, absent) values ('심청이', 85, 3);
+insert into student (name, score, absent) values ('심봉사', 90, 4);
+insert into student (name, score, absent) values ('콩쥐', 65, 0);
+insert into student (name, score, absent) values ('팥쥐', 52, 1);
+
+INSERT INTO notice (title, notice_dept, post_date, view_count) VALUES 
+('개발팀 전체 공지', '개발팀', '2023-01-05 00:00:00', 205);
+INSERT INTO notice (title, notice_dept, post_date, view_count) VALUES 
+('기획팀 전체 공지', '기획팀', '2023-01-20 00:00:00', 98);
+INSERT INTO notice (title, notice_dept, post_date, view_count) VALUES 
+('디자인팀 공유 사이트 금지', '디자인팀', '2023-01-29 00:00:00', 150);
+INSERT INTO notice (title, notice_dept, post_date, view_count) VALUES 
+('회계팀 컨퍼런스 정리 공지', '회계팀', '2023-02-05 00:00:00', 135);
+INSERT INTO notice (title, notice_dept, post_date, view_count) VALUES 
+('개발팀 프로젝트 미팅 공지', '개발팀', '2023-02-06 00:00:00', 86);
+INSERT INTO notice (title, notice_dept, post_date, view_count) VALUES 
+('디자인팀 프로젝트 미팅 공지', '디자인팀', '2023-02-06 00:00:00', 52);
 
 insert into resume_skill_tb (resume_id, skill) values (1, 'Vue.js');
 insert into resume_skill_tb (resume_id, skill) values (1, 'Oracle');

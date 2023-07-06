@@ -38,7 +38,6 @@ public class JobsRepositoryTest {
         // then
         System.out.println("테스트 : "+ sDtos.size());
         sDtos.forEach(System.out::print);
-    
     }
 
     @Test

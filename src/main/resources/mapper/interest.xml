@@ -20,10 +20,6 @@
         </foreach>
     </insert>
 
-    <update id="updateById">
-
-    </update>
-
     <delete id="deleteById">
       delete from interest_tb where user_id = #{userId}
     </delete>

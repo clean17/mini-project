@@ -93,7 +93,6 @@ public class ResumeController {
         model.addAttribute("rDtos", rLists);
         User userPS = userRepository.findById(principal.getUserId());
         model.addAttribute("user", userPS);
-        // rList.forEach((s)->{System.out.println("테스트 : "+ s.toString());});
         return "resume/manageResume";
     }
 
@@ -106,7 +105,6 @@ public class ResumeController {
 
     @PostMapping("/user/resume/write")
     public ResponseEntity<?> writeResume(@RequestBody ResumeWriteReqDto resumeWriteReqDto) {
-        // System.out.println("테스트 : "+ resumeWriteReqDto.toString());
         User principal = (User) session.getAttribute("principal");
         if (principal == null) {
             throw new CustomApiException("인증이 되지 않았습니다", HttpStatus.UNAUTHORIZED);
@@ -134,9 +132,6 @@ public class ResumeController {
 
     @PutMapping("/user/resume/update")
     public ResponseEntity<?> saveTempResume(@RequestBody ResumeUpdateReqDto resumeWriteReqDto) {
-
-        // System.out.println("테스트 : "+ resumeWriteReqDto.toString());
-
         User principal = (User) session.getAttribute("principal");
         if (principal == null) {
             throw new CustomApiException("인증이 되지 않았습니다", HttpStatus.UNAUTHORIZED);

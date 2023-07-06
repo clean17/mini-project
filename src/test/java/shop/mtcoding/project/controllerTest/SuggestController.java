@@ -1,6 +1,5 @@
 package shop.mtcoding.project.controllerTest;
 
-import static org.assertj.core.api.Assertions.assertThat;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
 
@@ -22,7 +21,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import shop.mtcoding.project.dto.suggest.SuggestReq.SuggestReqDto;
 import shop.mtcoding.project.dto.suggest.SuggestReq.SuggestUpdateReqDto;
 import shop.mtcoding.project.model.comp.Comp;
-import shop.mtcoding.project.model.suggest.SuggestRepository;
 import shop.mtcoding.project.model.user.User;
 
 @AutoConfigureMockMvc
@@ -35,8 +33,6 @@ public class SuggestController {
     @Autowired
     private ObjectMapper om;
 
-    @Autowired
-    private SuggestRepository suggestRepository;
     private MockHttpSession mockSession;
 
     private void mockCompSession() {

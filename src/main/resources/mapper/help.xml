@@ -18,6 +18,5 @@
     <delete id="deleteById">
         delete from help_tb where id = #{helpId}
     </delete>
-
 </mapper>
    

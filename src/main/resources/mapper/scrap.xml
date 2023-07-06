@@ -57,7 +57,4 @@
     <delete id="deleteByCompScrapId">
       delete from comp_scrap_tb where comp_scrap_id = #{compScrapId}
     </delete>
-
-  
-
 </mapper>

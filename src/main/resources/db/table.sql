@@ -10,6 +10,22 @@ create table user_tb (
     created_at timestamp
 );
 
+CREATE TABLE notice (
+  id BIGINT auto_increment primary key,
+  title varchar(100) not null,
+  notice_dept varchar(20) not null,
+  post_date DATETIME not null,
+  view_count int not null
+);
+
+create table student (
+    id BIGINT auto_increment primary key,
+    name varchar(20) not null,
+    score int not null,
+    absent int not null
+);
+
+
 
 create table comp_tb (
     comp_id int auto_increment primary key,

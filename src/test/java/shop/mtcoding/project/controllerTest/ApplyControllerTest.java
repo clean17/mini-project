@@ -28,6 +28,7 @@ import shop.mtcoding.project.model.user.User;
 
 @AutoConfigureMockMvc
 @SpringBootTest(webEnvironment = WebEnvironment.MOCK)
+// @SpringBootTest 으로 () 사용하지 않아도 기본값이 위 설정
 public class ApplyControllerTest {
     
     @Autowired

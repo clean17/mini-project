@@ -48,37 +48,4 @@ public class SkillRepositoryTest {
         // then
         
     }
-    // @Test
-    // @Transactional
-    // public void updateRequiredSkillById_test() throws Exception {
-    //     //given
-
-    //     List<String> skillList = new ArrayList<>();
-    //     skillList.add("Java");
-    //     skillList.add("Spring");
-
-    //     //when
-    //     System.out.println("테스트 : "+ skillRepository.updateRequiredSkillById(skillList)); 
-    
-    //     //then
-    
-    // }
-
-    // @Test
-    @Transactional
-    public void updateResumeSkillById_test() throws Exception {
-        // given
-        // List<ResumeUpdateSkillDto> skillList = new ArrayList<>();
-        // skillList.add(new ResumeUpdateSkillDto(2,"Java"));
-        // skillList.add(new ResumeUpdateSkillDto(3,"Java"));
-        // skillList.add(new ResumeUpdateSkillDto(5, "Java"));
-
-        // rDto.setJobsId(1);
-
-        // when
-        // System.out.println("테스트 : "+ skillRepository.updateResumeSkillById(skillList)); 
-    
-        // then
-    
-    }
 }

@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import shop.mtcoding.project.config.exception.CustomApiException;
-import shop.mtcoding.project.config.exception.CustomException;
 import shop.mtcoding.project.dto.help.HelpReq.HelpSaveReqDto;
 import shop.mtcoding.project.model.help.HelpRepository;
 

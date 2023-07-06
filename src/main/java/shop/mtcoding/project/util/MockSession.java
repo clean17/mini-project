@@ -8,7 +8,6 @@ import shop.mtcoding.project.model.comp.Comp;
 import shop.mtcoding.project.model.user.User;
 
 public class MockSession {
-
     public static void mockComp(HttpSession session) {
         Comp mockcomp = new Comp(
             1,

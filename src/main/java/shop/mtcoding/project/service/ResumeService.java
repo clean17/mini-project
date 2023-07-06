@@ -43,30 +43,6 @@ public class ResumeService {
         return resumeId;
     }
 
-    // @Transactional
-    // public Integer 이력서임시저장(ResumeWriteReqDto rDto, Integer userId) {
-    // Integer resumeId = 0;
-    // if (rDto.getUserId() != userId) {
-    // throw new CustomApiException("이력서를 작성할 권한이 없습니다.", HttpStatus.FORBIDDEN);
-    // }
-
-    // try {
-    // resumeRepository.insert(rDto);
-    // resumeId = rDto.getResumeId();
-    // } catch (Exception e) {
-    // throw new CustomApiException("이력서 임시저장 실패",
-    // HttpStatus.INTERNAL_SERVER_ERROR);
-    // }
-
-    // try {
-    // skillRepository.insertResumeSkill(rDto.getSkillList(), resumeId);
-    // } catch (Exception e) {
-    // throw new CustomApiException("이력서 임시저장 실패",
-    // HttpStatus.INTERNAL_SERVER_ERROR);
-    // }
-    // return resumeId;
-    // }
-
     @Transactional
     public void 이력서수정(ResumeUpdateReqDto rDto, Integer userId) {
         Resume resumePS = resumeRepository.findByResumeId(rDto.getResumeId());
