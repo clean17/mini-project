@@ -1,16 +1,34 @@
 # 구인구직 사이트 제작
 
+> ## 시연영상 ( Youtube )
+
+
+<a href="https://www.youtube.com/watch?v=JcPlD1fuNs0&ab_channel=%EB%A9%94%ED%83%80%EC%BD%94%EB%94%A9">![image](https://user-images.githubusercontent.com/118657689/234797375-8e1ca1f4-aac7-4365-9fd1-49b2c115aaea.png)</a>
+<br>
+
+
+> ## 발표자료 ( PDF )
+
+![image](https://user-images.githubusercontent.com/118657689/234799285-04c5ef06-3bde-40fd-8068-2ae6b5630770.png)
+
+- <a href="https://github.com/clean17/mini-project/files/11340940/6._.1_PPT.pdf">[6조_미니프로젝트1_PPT.pdf]</a>
+
+<br>
+
 > ## 프로젝트 소개
+
 - 구직자와 구인회사가 서로의 이력과 공고를 등록, 구직자는 공고를 통해 입사지원을 하고 구인회사는 공개된 이력서나 지원된 이력서를 통해서 구인을 한다.
 
 <br>
 
 > ## 프로젝트 기간
+
 - 2023-02-22 ~ 2023.03.07
 
 <br>
 
 > ## 기술 스택
+
 - JDK 11
 - Spring Boot 2.7.8
 - MyBatis
@@ -22,6 +40,7 @@
 <br>
 
 > ## 기능정리
+
 ### 1단계
 - 메인화면 레이아웃 ( 공고 목록, 헤더, 푸터, 로그인아이콘 )
 - 개인 - 회원가입, 로그인
@@ -76,8 +95,10 @@ testImplementation group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-
 <br>
 
 > ## 테이블 모델링
+
 <br>
- <img src="src\main\resources\static\images\mini-project-table.jpg">
+
+![mini-project-table](https://user-images.githubusercontent.com/118657689/236421490-b34233fe-337d-4bb0-80e6-27d4f09006c5.jpg)
 
 <br>
 <br>
@@ -89,6 +110,7 @@ testImplementation group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-
 <br>
 
 > ## 담당 기능
+
 - 박인우 (팀장) 
     - 테이블 설계 및 모델링, 정규화
     - 간단한 유틸 클래스 제공
@@ -125,40 +147,41 @@ testImplementation group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-
 
 > ## 구현 화면
 
- <img src="src\main\resources\static\images\화면 캡처 2023-03-11 212715.jpg">
- <img src="src\main\resources\static\images\화면 캡처 2023-03-11 212739.jpg">
- <img src="src\main\resources\static\images\화면 캡처 2023-03-11 212758.jpg">
- <img src="src\main\resources\static\images\화면 캡처 2023-03-11 212812.jpg">
- <img src="src\main\resources\static\images\화면 캡처 2023-03-11 212825.jpg">
-
- <img src="src\main\resources\static\images\화면 캡처 2023-03-11 212844.jpg">
- <img src="src\main\resources\static\images\화면 캡처 2023-03-11 212906.jpg">
-   <img src="src\main\resources\static\images\화면 캡처 2023-03-11 213422.jpg">
- <img src="src\main\resources\static\images\화면 캡처 2023-03-11 212925.jpg">
- <img src="src\main\resources\static\images\화면 캡처 2023-03-11 212947.jpg">
- <img src="src\main\resources\static\images\화면 캡처 2023-03-11 212957.jpg">
- <img src="src\main\resources\static\images\화면 캡처 2023-03-11 213007.jpg">
-
-
-
-<br>
-
-
-> ## 시연영상
-- 구직자 시나리오 영상
-https://www.youtube.com/watch?v=4_x91KnOMYU
-- 구인기업 시나리오 영상
-https://www.youtube.com/watch?v=osN8bGS7tzQ
+![Honeycam 2023-05-05 18-28-13](https://user-images.githubusercontent.com/118657689/236425198-7ef746a6-968d-4a62-8947-7cc939c04b09.gif)
+![Honeycam 2023-05-05 18-28-46](https://user-images.githubusercontent.com/118657689/236425206-2288410c-4651-4d78-8ac8-ee495c76663f.gif)
+![Honeycam 2023-05-05 18-29-12](https://user-images.githubusercontent.com/118657689/236425215-a5faea7e-8a68-4fe2-9613-74b615d5e981.gif)
+![Honeycam 2023-05-05 18-29-30](https://user-images.githubusercontent.com/118657689/236425223-cdb99e7a-aaca-46b4-bb47-248a23adc010.gif)
+![Honeycam 2023-05-05 18-30-29](https://user-images.githubusercontent.com/118657689/236425225-7650fef0-50b1-40d4-8f16-42cfd663a80e.gif)
+![Honeycam 2023-05-05 18-31-02](https://user-images.githubusercontent.com/118657689/236425231-3a51f76d-240f-424f-b2ba-9938f4a65bbd.gif)
+![Honeycam 2023-05-05 18-31-17](https://user-images.githubusercontent.com/118657689/236425235-ab0c4d2a-431d-46f0-9f4a-101fc5ed8398.gif)
+![Honeycam 2023-05-05 18-31-30](https://user-images.githubusercontent.com/118657689/236425239-e21945ce-3ecf-4424-891d-ae9802edf947.gif)
+![Honeycam 2023-05-05 18-32-00](https://user-images.githubusercontent.com/118657689/236425242-bbe8ecdb-b651-4de6-a88a-216705c68e51.gif)
+![Honeycam 2023-05-05 18-32-26](https://user-images.githubusercontent.com/118657689/236425248-945e1bee-0414-4543-a845-aff16e3726b1.gif)
+![Honeycam 2023-05-05 18-32-48](https://user-images.githubusercontent.com/118657689/236425254-dba6eb48-f28b-40c5-a114-a48bc33777c7.gif)
+![Honeycam 2023-05-05 18-33-29](https://user-images.githubusercontent.com/118657689/236425258-2502ffe3-4e26-42a2-a439-4193763e1044.gif)
+![Honeycam 2023-05-05 18-33-56](https://user-images.githubusercontent.com/118657689/236425263-d484c9a1-1d41-458c-b05d-c04e6d310f16.gif)
+![Honeycam 2023-05-05 18-35-27](https://user-images.githubusercontent.com/118657689/236425271-f4f5b96a-0fe6-4986-bea0-4c7dc3185d00.gif)
+![Honeycam 2023-05-05 18-35-39](https://user-images.githubusercontent.com/118657689/236425277-d6798a58-9977-48f4-99eb-54ba610fbca9.gif)
+![Honeycam 2023-05-05 18-35-58](https://user-images.githubusercontent.com/118657689/236425288-f791d854-4369-4f90-92b8-8f6235b4c966.gif)
+![Honeycam 2023-05-05 18-36-13](https://user-images.githubusercontent.com/118657689/236425296-f3a5c334-1761-48e6-a961-38db5d6bd866.gif)
+![Honeycam 2023-05-05 18-36-28](https://user-images.githubusercontent.com/118657689/236425308-6f1686ae-468d-432a-a0a6-bb4a28f10ab2.gif)
+![Honeycam 2023-05-05 18-36-44](https://user-images.githubusercontent.com/118657689/236425314-030a176e-7f01-4a70-9eb2-bc3b43611d94.gif)
+![Honeycam 2023-05-05 18-37-01](https://user-images.githubusercontent.com/118657689/236425320-9b24ed50-6d4d-417f-a740-42bba5b3ed81.gif)
+![Honeycam 2023-05-05 18-37-22](https://user-images.githubusercontent.com/118657689/236425325-9d3b9ebe-4182-4db7-9db5-387127a51910.gif)
+![Honeycam 2023-05-05 18-37-43](https://user-images.githubusercontent.com/118657689/236425328-2655f6d1-4a9a-4d32-9783-6b9f1f96c621.gif)
+![Honeycam 2023-05-05 18-37-58](https://user-images.githubusercontent.com/118657689/236425334-0c3b7f25-63eb-47c7-8f55-300d47095372.gif)
 
 <br>
 
 > ## 보완점
+
 - 편의 기능이 필요해 보인다.( 알림, 이메일, 비밀번호 찾기 기능 )
 - 한번 완료한 기능을 다시 테스트 하지 않도록 완벽함이 필요하다.
 
 <br>
 
 > ## 후기
+
 - 박인우
 
 
